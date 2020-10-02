@@ -5,10 +5,37 @@
 	</head>
 	<body>
 
-		<form action="" method="get">
-			Enter first name:<input type="text" name="Firstname"/>	
-			<input type="submit" name="btn" value="Go"/>	
+		<form action="https://jntuacea.net/wtclass/formsubmit.php" method="get">
+			<label for "Firstname">Enter first name:</label><input type="text" name="Firstname" id="Name" maxlength="20"  placeholder="Santhosh"  pattern="[a-zA-Z]{5,20}" required="required" value="Santhosh" title="name should always begin with letter and should be of max 20 characters "/><br/>	
+			<label for "Rollno.">Enter Roll no.</label><input type="text" name="Rollno" pattern="18001A05[0-9][0-9]" maxlength="10" placeholder="18001A0545"/><br/>
+
+		password:<input type="password" name="pwd"/><br/>
+		Branch:<input type="radio" name="branch" value="cse"/>cse<br/>
+			<input type="radio" name="branch" value="ece"/>ece<br/>
+			<input type="radio" name="branch" value="mech"/>Mech<br/>
+			<input type="radio" name="branch" value="eee"/>EEE<br/>
+			<input type="radio" name="branch" value="civil"/>civil<br/>
+			
+		Address:
+		<textarea name="Adress" placeholder="Enter text area" rows="8" cols="80"></textarea><br/>
+		subjects:<input type="checkbox" name="subjects[]" value="Mathematics"/>Mathematics
+		<input type="checkbox" name="subjects[]" value="C"/>C programming
+		<input type="checkbox" name="subjects[]" value="DS"/>Data structures
+		<input type="checkbox" name="subjects[]" value=WT""/>Web Technologies
+		<input type="checkbox" name="subjects[]" value="Java"/>Java programming <br/>
+		year of study:<select name="year of study">
+			<option value="Btech-I">Btech -I</option>
+			<option value="Btech-II">Btech-II</option>
+			<option value="Btech-III">Btech-III</option>
+			<option value="Btech-IV">Btech-IV</option>
+			<option value="none">none</option>
+
+		</select>
+		<br/>
+		<input type="submit" value="Go"/><br/>
+
 		</form>
+		
 		<form action="https://google.co.in/search" method="get">
 		        Google Search:<input type="text" name="q">
 			<input type="submit" name="btn" value="Google Search">
