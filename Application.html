@@ -6,14 +6,15 @@
 	<body>
 		<center><h1>Admission for BTech/MTech/MBA/MCA</h1></center>
 		<form action="https://jntuacea.net/wtclass/formsubmit.php" method="get">
-		<label for "Firstname">First Name:</label><input type="text" name="Firstname" maxlength="25" placeholder="AS PER SSC" required="required"/>
-		<label for "lastname">Last Name:</label><input type="text" name="Last name" maxlength="25" placeholder="AS PER SSC" required="required"/></br>
+		<label for "Firstname">First Name:</label><input type="text" name="Firstname" maxlength="30" placeholder="AS PER SSC" required="required"/>
+		<label for "lastname">Last Name:</label><input type="text" name="Last name" maxlength="20" placeholder="AS PER SSC" required="required"/></br></br>
 		
-		<label for "Father's name">Father's Name:</label><input type="text" name="Father's name" maxlength="25" placeholder="AS PER SSC" required="required"/></br>
+		<label for "Father's name">Father's Name:</label><input type="text" name="Father's name" maxlength="30" placeholder="AS PER SSC" required="required"/></br></br>
 	
-		<label for "Mother's name">Mother's Name:</label><input type="text" name="Mother's name" maxlength="25" placeholder="AS PER SSC" required="required"/></br>
+		<label for "Mother's name">Mother's Name:</label><input type="text" name="Mother's name" maxlength="30" placeholder="AS PER SSC" required="required"/></br></br>
 
-		Day:<input type="text" name="day" pattern="[1-31]{1,2}" required="required" placeholder="1-31"/>
+		
+	DOB: Day:<input type="text" name="day" pattern="[1-31]{1,2}" required="required" placeholder="1-31"/>
 
 		Month:<select name="month">
 			<option value="January">January</option>
@@ -39,7 +40,46 @@
 			<option value="2001">2001</option>
 			<option value="2002">2002</option>
 			<option value="2003">2003</option>
+		</select></br></br>
+		Type of exam:<select name="exam:">
+			<option value="EAMCET">EAMCET</option>
+			<option value="ECET">ECET</option>
+			<option value="APPGCET">APPGCET</option>
+			<option value="APICET">APICET</option>
+		</select></br></br>
+		Rank:<input type="text" name="rank" required="required" placeholder="Enter your rank"></br></br>
+ 		<input type="radio" name="graduate" value="UG"/>UnderGraduate
+		<input type="radio" name="graduate" value="PG"/>PostGraduate</br></br>
+		Btech:<select name="Course:">
+			<option value=Computer Science and Engineering">CSE</option>
+			<option value="Electronics and Communication Engineering">ECE</option>
+			<option value="Electrical and Electronics Engineering">EEE</option>
+			<option value="Mechanical Engineering">MECH</option>
+			<option value="Civil Engineering">Civil</option>
+			<option value="chemical Engineering ">CHEM</option>
 		</select>
+		Mtech:<select name="Course:">
+			<option value=Artificial Intelligence">AI</option>
+			<option value="Robotics">Robotics</option>
+			<option value="Machine Learning">ML</option>
+			<option value="Advance CAD">CAD</option>
+			<option value="Very Large Scale Integeration">VLSI</option>
+			<option value="Organic Chemistry">Organic chemistry</option>
+		</select>
+		MCA:<select name="Course:">
+			<option value=Systems management">Systems Management</option>
+			<option value="Software development">Software Development</option>
+			<option value="Networking">Networking</option>
+			<option value="Trouble shooting">Trouble shooting</option>
+		</select></br></br>
+		Email:<input type="text" name="email" placeholder="XYZ@gmail.com"/></br></br>
+		MobileNo:<input type="text" name="Mobile no." maxlength="10" pattern="[0-9]"/></br></br>
+		Address:<textarea name="address" placeholder="Enter your residence" rows="8" cols="25"></textarea>
+		<center><input type="submit"value="submit"/></center>
+	</form>
+</body>
+</html>
+
 		
 			
 	
@@ -49,10 +89,4 @@
 		
 		
 		
-		
-		</form>
-
-
-
-	</body>
-</html>
+	
